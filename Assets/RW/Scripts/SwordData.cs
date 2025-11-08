@@ -16,6 +16,8 @@ public class SwordData : ScriptableObject
     private int goldCost;
     [SerializeField]
     private int attackDamage;
+    [SerializeField] 
+    private AudioClip selectSound;
 
         
     public string SwordName
@@ -57,6 +59,8 @@ public class SwordData : ScriptableObject
             return attackDamage;
         }
     }
+
+    public AudioClip SelectSound => selectSound;
 
     // Start is called before the first frame update
     void Start()
